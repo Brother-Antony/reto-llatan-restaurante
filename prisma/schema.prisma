@@ -7,22 +7,14 @@ datasource db {
   url       = env("DATABASE_URL")
   directUrl = env("DIRECT_URL")
 }
-
-model User {
-  id String @id @unique
-
-  name        String
-  Reservation Reservation[]
-}
-
 model Reservation {
-  id String @id @default(uuid())
+  id              Int      @id @default(autoincrement())
 
+  name            String
   startDate       DateTime
-  endDate         DateTime
-  createdAT       DateTime @default(now())
-  numberOfPeople  Int
-
-  User    User?   @relation(fields: [userId], references: [id])
-  userId  String?
+  startTime       String
+  numberOfGuests  String
+  status          String   @default("low")
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @default(now())
 }

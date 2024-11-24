@@ -1,11 +1,10 @@
-"use client"
-
+import Main from "@/modules/reserve/Main";
 import { unstable_noStore as noStore } from "next/cache"
 
-export default function Home() {
+export default async function Home() {
   noStore()
   
   return (
-    <div>Home</div>
+    <Main />
   )
 }
