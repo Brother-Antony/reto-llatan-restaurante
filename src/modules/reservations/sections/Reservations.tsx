@@ -1,4 +1,4 @@
-import Button from "@/shared/components/Button"
+import { Button } from "@nextui-org/react"
 import { faPlus } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useRouter } from "next/navigation"

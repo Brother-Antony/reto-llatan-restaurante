@@ -1,11 +1,11 @@
 "use client"
 
-import Button from "@/shared/components/Button"
+import { Button } from "@nextui-org/react"
 import { faPlus } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useRouter } from "next/navigation"
 
-export default function page() {
+export default function Reservations() {
     const router = useRouter()
 
     return (
@@ -17,7 +17,7 @@ export default function page() {
                     New
                 </Button>
             </div>
-            
+
         </div>
     )
 }
