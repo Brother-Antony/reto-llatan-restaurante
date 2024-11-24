@@ -56,7 +56,7 @@ export async function updateRerservation(formData: FormData) {
 
   if (!id || !name || !status || !startDate || !startTime || !numberOfGuests) return
 
-  const data = await prisma.reservation.update({
+  await prisma.reservation.update({
     where: {
       id: parseInt(id)
     },

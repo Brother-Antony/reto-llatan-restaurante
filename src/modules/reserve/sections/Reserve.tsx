@@ -35,7 +35,7 @@ export default async function Reserve() {
                 </thead>
                 <tbody>
                     {data && data.length > 0 ? (
-                        data.map((item: any, index: number) => (
+                        data.map((item, index) => (
                             <tr key={index}>
                                 <td className="text-left">{item.id}</td>
                                 <td className="text-left">{item.name}</td>
