@@ -19,7 +19,7 @@ export async function createReservation(formData: FormData) {
         name: name,
         startDate: startDateTime,
         startTime: startTime,
-        status: "pending",
+        // status: "pending",
         numberOfGuests: numberOfGuests,
       },
     })

@@ -14,7 +14,7 @@ model Reservation {
   startDate       DateTime
   startTime       String
   numberOfGuests  String
-  status          String   @default("low")
+  status          String   @default("pending")
   createdAt       DateTime @default(now())
-  updatedAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
 }
